@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@layer components {
+
+}
+
+@layer utilities {
+    main {
+        @apply h-screen bg-gray-900 p-5 flex justify-center items-center;
+    }
+}
