@@ -3,6 +3,7 @@
 A fun and interactive version of the classic **Tenzies** game built using **React**, **Vite**, and **TailwindCSS**.
 The goal: Roll until all dice have the same value. Click each die to **freeze** it between rolls.
 
+**Live Demo:** [Play the game here](https://molo-m.github.io/tenzies-project/)
 ---
 
 ## 📂 Project Structure
