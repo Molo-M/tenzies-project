@@ -27,16 +27,16 @@ tenzies-project/
 
 ## 🚀 Features
 
-* 🎯 **Win condition detection** – Automatically detects when all dice are the same and held.
-* 🎲 **Randomized dice rolls** – Rolls all non-held dice with values between **1 and 6**.
-* 🖱 **Hold functionality** – Click on a die to lock its value.
-* 🎉 **Victory celebration** – Confetti animation on win.
-* ♻ **New game button** – Resets the game instantly.
-* 🎨 **Responsive design** – Styled with **TailwindCSS** for mobile and desktop.
+* **Win condition detection** – Automatically detects when all dice are the same and held.
+* **Randomized dice rolls** – Rolls all non-held dice with values between **1 and 6**.
+* **Hold functionality** – Click on a die to lock its value.
+* **Victory celebration** – Confetti animation on win.
+* **New game button** – Resets the game instantly.
+* **Responsive design** – Styled with **TailwindCSS** for mobile and desktop.
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 * **React** (Functional components + Hooks)
 * **Vite** (Fast dev server & build tool)
@@ -46,7 +46,7 @@ tenzies-project/
 
 ---
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 1. **Clone this repository**
 
@@ -73,7 +73,7 @@ tenzies-project/
 
 ---
 
-## 🎮 How to Play
+## How to Play
 
 1. Click **Roll** to roll all dice.
 2. Click any die to **hold** its value between rolls.
@@ -82,7 +82,7 @@ tenzies-project/
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ![alt text](image.png)
 
