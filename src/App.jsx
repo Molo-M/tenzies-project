@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import './index.css'
 import Dice from './components/Dice'
 import { nanoid } from 'nanoid'
@@ -69,6 +69,16 @@ export default function App() {
     )
     roll()
   }
+
+  // Create useRef to access "roll" button domNode 
+  const myRef = useRef(null)
+  // Use "useEffect" to access our ref and activate keyboard focus
+  useEffect(() => {
+    const domNode = myRef.current
+    if (gameWon) {
+      domNode.focus()
+    }
+  }, [gameWon])
   
   return (
     <main>
@@ -78,7 +88,7 @@ export default function App() {
         <section className="grid grid-cols-5 gap-6">
           {dieElements}
         </section>
-        <button onClick={gameWon ? startOver: roll} className="bg-blue-700 hover:bg-blue-900 cursor-pointer text-white rounded-3xl text-xl sm:text-2xl font-semibold py-2 px-5">{gameWon ? "New Game" : "Roll"}</button>
+        <button ref={myRef} onClick={gameWon ? startOver: roll} className="bg-blue-700 hover:bg-blue-900 cursor-pointer text-white rounded-3xl text-xl sm:text-2xl font-semibold py-2 px-5">{gameWon ? "New Game" : "Roll"}</button>
       </div>
       {gameWon && <Confetti />}
     </main>
