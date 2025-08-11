@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
 @layer components {
-
+    #dice {
+        @apply cursor-pointer w-10 h-10 border p-6 rounded-xl flex items-center justify-center text-2xl font-bold;
+    }
 }
 
 @layer utilities {
